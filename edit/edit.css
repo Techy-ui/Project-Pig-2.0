@@ -1,6 +1,6 @@
 body {
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: url('/back.png') no-repeat center center fixed;
+      background: url('https://techy-ui.github.io/Project-Pig-2.0/back.png') no-repeat center center fixed;
       background-size: cover;
       padding: 2rem;
       color: #fff;
