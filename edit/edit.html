@@ -4,72 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Create Your Profile – UnityHearts</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413') no-repeat center center fixed;
-      background-size: cover;
-      padding: 2rem;
-      color: #fff;
-    }
-
-    .form-container {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 2rem;
-      max-width: 500px;
-      margin: auto;
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.3);
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    label {
-      display: block;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.3rem;
-      border: none;
-      border-radius: 10px;
-      font-size: 1rem;
-    }
-
-    button {
-      margin-top: 2rem;
-      width: 100%;
-      padding: 0.7rem;
-      background: #ff80ab;
-      color: white;
-      border: none;
-      font-size: 1.2rem;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #ff4081;
-    }
-  </style>
+  <link rel="stylesheet" href="/edit/edit.css" />
 </head>
 <body>
   <div class="form-container">
-    <h2>Create Your Profile</h2>
+    <h2>Find Your Match</h2>
     <form action="/match/match.html" method="GET">
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="e.g., Luna the Bold" required />
+      <input type="text" id="name" name="name" placeholder="e.g., Luna the Bold" required autocomplete="off" />
 
       <label for="age">Age</label>
-      <input type="number" id="age" name="age" min="18" max="99" required />
+      <input type="number" id="age" name="age" min="18" max="99" required autocomplete="off"/>
 
       <label for="gender">Gender</label>
       <select id="gender" name="gender" required>
@@ -80,7 +25,7 @@
       </select>
 
       <label for="food">Favorite Food</label>
-      <input type="text" id="food" name="food" placeholder="e.g., Bamboo, Banana, Biryani" />
+      <input type="text" id="food" name="food" placeholder="e.g., Bamboo, Banana, Biryani" required autocomplete="off"/>
 
       <label for="hobbies">Hobbies</label>
       <textarea id="hobbies" name="hobbies" placeholder="e.g., Tree climbing, Napping, Dancing under moonlight"></textarea>
@@ -88,17 +33,20 @@
       <label for="personality">Pick a Personality Trait</label>
       <select id="personality" name="personality" required>
         <option value="">-- Select --</option>
-        <option>Playful & Loyal</option>
-        <option>Mysterious & Calm</option>
-        <option>Fiery & Passionate</option>
-        <option>Lazy but Loving</option>
-        <option>Elegant & Sassy</option>
+        <option>Confident & Bold</option>
+        <option>Wise & Observant</option>
+        <option>Loyal & Friendly</option>
+        <option>Independent & Curious</option>
+        <option>Patient & Calm</option>
+        <option>Free-spirited & Hardworking</option>
+        <option>Quirky & Cooperative</option>
+        <option>Fierce & Passionate</option>
+        <option>Sensitive & Gentle</option>
       </select>
 
       <label for="idealDate">Ideal Date</label>
-      <input type="text" id="idealDate" name="idealDate" placeholder="e.g., Stargazing, Swimming in a jungle lake..." />
-
-      <button type="submit">🦊 Find My Animal Soulmate</button>
+      <input type="text" id="idealDate" name="idealDate" placeholder="e.g., Stargazing, Swimming in a jungle lake..." required autocomplete="off"/>
+      <button type="submit">🦊 Find My Soulmate</button>
     </form>
   </div>
 </body>

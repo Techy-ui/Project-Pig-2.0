@@ -92,7 +92,6 @@
   <h1 style="text-align:center;">💘 It's a Match! 💘</h1>
 
   <div class="main-container">
-    <!-- Left: User Card -->
     <div class="card">
       <img src="https://cdn-icons-png.flaticon.com/512/219/219970.png" alt="User" />
       <h2 id="userName">You</h2>
@@ -102,7 +101,6 @@
       <p id="userPersonality"></p>
     </div>
 
-    <!-- Right: Animal Card -->
     <div class="card">
       <img id="animalImg" src="" alt="Animal" />
       <h2 id="animalName"></h2>
@@ -110,7 +108,6 @@
       <p id="animalMessage"></p>
     </div>
 
-    <!-- Connector -->
     <div class="connector">
       <span>✨ When humans and animals match, magic happens! ✨</span>
     </div>
@@ -166,15 +163,13 @@
       const food = params.get("food");
       const hobbies = params.get("hobbies");
       const personality = params.get("personality");
-
-      // Fill user profile
+      
       document.getElementById("userName").textContent = name;
       document.getElementById("userAge").textContent = age ? `Age: ${age}` : "";
       document.getElementById("userFood").textContent = food ? `Loves: ${food}` : "";
       document.getElementById("userHobbies").textContent = hobbies ? `Hobbies: ${hobbies}` : "";
       document.getElementById("userPersonality").textContent = personality ? `Personality: ${personality}` : "";
 
-      // Match with animal based on personality
       let match = animals.find(a => a.personality === personality);
       if (!match) match = animals[Math.floor(Math.random() * animals.length)];
 

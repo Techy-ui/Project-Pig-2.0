@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>It's a Match! – UnityHearts</title>
   <link rel="stylesheet" href="/match/match.css">
+  <style>
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      margin: 10px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    #confirmBtn {
+      background-color: #ff69b4;
+      color: white;
+    }
+    #dislikeBtn {
+      background-color: #ccc;
+      color: black;
+      position: relative;
+    }
+    #dislikeMessage {
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .decision-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
   <div class="header">
@@ -20,9 +49,8 @@
 
   <div class="main-container">
     <div class="profiles-wrapper">
-      <!-- Left: User Card -->
       <div class="card user-card">
-        <img id="userPhoto" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" />
+        <img id="userPhoto" src="" alt="User Photo" />
         <h2 id="userName">You</h2>
         <p id="userAge"></p>
         <p id="userFood"></p>
@@ -32,7 +60,6 @@
         <p id="userMessage"></p>
       </div>
 
-      <!-- Connector -->
       <div class="connector">
         <div class="heart-line">
           <span class="zigzag">&#x2500;&#x2500;&#x2500;&#x2500;</span>
@@ -42,7 +69,6 @@
         <div class="match-quote">✨ When humans and animals match, magic happens! ✨</div>
       </div>
 
-      <!-- Right: Animal Card -->
       <div class="card animal-card">
         <img id="animalImg" src="" alt="Animal" />
         <h2 id="animalName"></h2>
@@ -55,6 +81,13 @@
     </div>
   </div>
 
+  <div class="decision-buttons">
+    <button id="confirmBtn" >❤️ Confirm Match</button>
+    <button id="dislikeBtn">💔 Not Interested</button>
+    <p id="dislikeMessage"></p>
+  </div>
+
   <script src="/match/match.js"></script>
+
 </body>
 </html>
