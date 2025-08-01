@@ -1,7 +1,7 @@
 
 const humanTraitsMap = {
   male:{
-    image: "/match/male.png"
+    image: "https://techy-ui.github.io/Project-Pig-2.0/match/male.png"
   },
   "Confident & Bold": {
     traits: "Natural leader, assertive, dominant.",
@@ -52,70 +52,70 @@ const animals = {
       traits: "Natural leader, assertive, dominant.",
       message: "Leo would fight the world for your heart — and purr for your touch.",
       personality: "Confident & Bold",
-      image: "/match/lion.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/lion.jpg"
     },
     {
       name: "Oliver the Owl",
       traits: "Thinks deeply, quiet, calm decision maker.",
       message: "Oliver sees the beauty in your soul — and will cherish your heart in silence.",
       personality: "Wise & Observant",
-      image: "/match/owl.jpeg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/owl.jpeg"
     },
     {
       name: "Max the Dog",
       traits: "Warm-hearted, dependable, trustworthy.",
       message: "Max is loyal to the core — a friend and lover you can always count on.",
       personality: "Loyal & Friendly",
-      image: "/match/dog.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/dog.jpg"
     },
     {
       name: "Charlie the Cat",
       traits: "Free-spirited, clever, selective.",
       message: "Charlie loves on his own terms — curious and fiercely independent.",
       personality: "Independent & Curious",
-      image: "/match/cat.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/cat.jpg"
     },
     {
       name: "Fiona the Fox",
       traits: "Sharp, humorous, adaptable.",
       message: "Fiona is witty and playful — always ready to make you smile.",
       personality: "Clever & Witty",
-      image: "/match/fox.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/fox.jpg"
     },
     {
       name: "Tommy the Turtle",
       traits: "Grounded, peaceful, slow but steady.",
       message: "Tommy believes steady love wins the race — patient and true.",
       personality: "Patient & Calm",
-      image: "/match/turtle.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/turtle.jpg"
     },
     {
       name: "Hank the Horse",
       traits: "Driven, explorer, strong will.",
       message: "Hank runs wild with passion, never giving up on love or dreams.",
       personality: "Free-spirited & Hardworking",
-      image: "/match/horse.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/horse.jpg"
     },
     {
       name: "Perry the Penguin",
       traits: "Fun, social, team-oriented.",
       message: "Perry’s love is a joyful adventure — always playful and loyal.",
       personality: "Quirky & Cooperative",
-      image: "/match/penguin.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/penguin.jpg"
     },
     {
       name: "Tyson the Tiger",
       traits: "Bold, relentless, ambitious.",
       message: "Tyson’s love is fierce and unstoppable — a fire that never dies.",
       personality: "Fierce & Passionate",
-      image: "/match/tiger.jpg"
+      image: "/https://techy-ui.github.io/Project-Pig-2.0match/tiger.jpg"
     },
     {
       name: "Benny the Rabbit",
       traits: "Soft, empathetic, caring.",
       message: "Benny’s love is gentle and sweet — a warm embrace on a cold day.",
       personality: "Sensitive & Gentle",
-      image: "/match/rabbit.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/rabbit.jpg"
     }
   ],
   female: [
@@ -124,21 +124,21 @@ const animals = {
       traits: "Natural leader, assertive, dominant.",
       message: "Leona leads with grace and passion — a queen who loves fiercely.",
       personality: "Confident & Bold",
-      image: "/match/lioness.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/lioness.jpg"
     },
     {
       name: "Luna the Owl",
       traits: "Thinks deeply, quiet, calm decision maker.",
       message: "Luna believes love doesn't need loud words — just soulful silence under moonlight.",
       personality: "Wise & Observant",
-      image: "/match/owl2.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/owl2.jpg"
     },
     {
       name: "Bella the Dog",
       traits: "Warm-hearted, dependable, trustworthy.",
       message: "Bella is your forever loyal companion — loving with all her heart.",
       personality: "Loyal & Friendly",
-      image: "/match/dog.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/dog.jpg"
     },
     {
       name: "Cleo the Cat",
@@ -152,42 +152,42 @@ const animals = {
       traits: "Sharp, humorous, adaptable.",
       message: "Fia charms and winks her way into your heart with clever wit.",
       personality: "Clever & Witty",
-      image: "/match/fox.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/fox.jpg"
     },
     {
       name: "Tina the Turtle",
       traits: "Grounded, peaceful, slow but steady.",
       message: "Tina’s love is steady and calm — the rock you can always lean on.",
       personality: "Patient & Calm",
-      image: "/match/turtle.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/turtle.jpg"
     },
     {
       name: "Holly the Horse",
       traits: "Driven, explorer, strong will.",
       message: "Holly runs free and wild — a loving spirit with unstoppable drive.",
       personality: "Free-spirited & Hardworking",
-      image: "/match/horse.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/horse.jpg"
     },
     {
       name: "Penny the Penguin",
       traits: "Fun, social, team-oriented.",
       message: "Penny’s love is playful and warm — a friend and partner all in one.",
       personality: "Quirky & Cooperative",
-      image: "/match/penguin.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/penguin.jpg"
     },
     {
       name: "Tigra the Tiger",
       traits: "Bold, relentless, ambitious.",
       message: "Tigra’s love is fierce and unforgettable — a flame that never fades.",
       personality: "Fierce & Passionate",
-      image: "/match/tiger.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/tiger.jpg"
     },
     {
       name: "Ruby the Rabbit",
       traits: "Soft, empathetic, caring.",
       message: "Ruby’s love is gentle and pure — a comforting hug when you need it most.",
       personality: "Sensitive & Gentle",
-      image: "/match/rabbit.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/rabbit.jpg"
     }
   ]
 };
