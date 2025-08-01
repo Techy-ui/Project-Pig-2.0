@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>It's a Match! – UnityHearts</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffe0e9, #e0f7fa);
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      gap: 2rem;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      flex: 1;
+    }
+
+    .card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ff8aa2;
+      margin-bottom: 1rem;
+    }
+
+    .connector {
+      flex: 0 0 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .connector span {
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      background: #ffccda;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      color: #c2185b;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #e91e63;
+    }
+
+    @media (max-width: 800px) {
+      .main-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">💘 It's a Match! 💘</h1>
+
+  <div class="main-container">
+    <!-- Left: User Card -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/219/219970.png" alt="User" />
+      <h2 id="userName">You</h2>
+      <p id="userAge"></p>
+      <p id="userFood"></p>
+      <p id="userHobbies"></p>
+      <p id="userPersonality"></p>
+    </div>
+
+    <!-- Right: Animal Card -->
+    <div class="card">
+      <img id="animalImg" src="" alt="Animal" />
+      <h2 id="animalName"></h2>
+      <p id="animalTraits"></p>
+      <p id="animalMessage"></p>
+    </div>
+
+    <!-- Connector -->
+    <div class="connector">
+      <span>✨ When humans and animals match, magic happens! ✨</span>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button class="button" onclick="window.location.href='create-profile.html'">🔁 Match Again</button>
+  </div>
+
+  <script>
+    const animals = [
+      {
+        name: "Luna the Owl",
+        traits: "Wise, introverted, excellent listener.",
+        message: "Luna believes deep connections are built in silence.",
+        personality: "Mysterious & Calm",
+        image: "https://upload.wikimedia.org/wikipedia/commons/8/85/Barn_owl_%28Tyto_alba%29_flight.jpg"
+      },
+      {
+        name: "Gary the Giraffe",
+        traits: "Tall, awkward, always looks out for others.",
+        message: "Gary loves long walks and high views of the future.",
+        personality: "Playful & Loyal",
+        image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg"
+      },
+      {
+        name: "Sasha the Sloth",
+        traits: "Relaxed, cuddly, loyal for life.",
+        message: "Sasha says love is best when it's slow and sweet.",
+        personality: "Lazy but Loving",
+        image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Bradypus.jpg"
+      },
+      {
+        name: "Rocky the Raccoon",
+        traits: "Curious, bold, night adventurer.",
+        message: "Rocky says he may steal your food, but he’ll never steal your trust.",
+        personality: "Fiery & Passionate",
+        image: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Raccoon_procyon_lotor.jpg"
+      },
+      {
+        name: "Bella the Bunny",
+        traits: "Energetic, loving, shy but sweet.",
+        message: "Bella says love is a field full of clovers and cuddles.",
+        personality: "Elegant & Sassy",
+        image: "https://upload.wikimedia.org/wikipedia/commons/7/78/Rabbit_in_montana.jpg"
+      }
+    ];
+
+    function matchAnimal() {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name") || "You";
+      const age = params.get("age");
+      const food = params.get("food");
+      const hobbies = params.get("hobbies");
+      const personality = params.get("personality");
+
+      // Fill user profile
+      document.getElementById("userName").textContent = name;
+      document.getElementById("userAge").textContent = age ? `Age: ${age}` : "";
+      document.getElementById("userFood").textContent = food ? `Loves: ${food}` : "";
+      document.getElementById("userHobbies").textContent = hobbies ? `Hobbies: ${hobbies}` : "";
+      document.getElementById("userPersonality").textContent = personality ? `Personality: ${personality}` : "";
+
+      // Match with animal based on personality
+      let match = animals.find(a => a.personality === personality);
+      if (!match) match = animals[Math.floor(Math.random() * animals.length)];
+
+      document.getElementById("animalName").textContent = match.name;
+      document.getElementById("animalTraits").textContent = "Traits: " + match.traits;
+      document.getElementById("animalMessage").textContent = match.message;
+      document.getElementById("animalImg").src = match.image;
+    }
+
+    window.onload = matchAnimal;
+  </script>
+
+</body>
+</html>

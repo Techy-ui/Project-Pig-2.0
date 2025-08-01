@@ -1,5 +1,5 @@
 
 setTimeout(function() {
-        window.location.href = "https://techy-ui.github.io/Project-pig/home/home.html"; 
+        window.location.href = "/home/home.html"; 
     }, 7000); 
 
