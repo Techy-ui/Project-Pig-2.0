@@ -215,7 +215,7 @@ function matchAnimal() {
   if (photoURL) {
     userPhoto.src = photoURL;
   } else {
-    userPhoto.src = gender === "female" ? "/match/female.png" : "/match/man.png";
+    userPhoto.src = gender === "female" ? "https://techy-ui.github.io/Project-Pig-2.0/match/female.png" : "https://techy-ui.github.io/Project-Pig-2.0//match/man.png";
   }
 
   const human = humanTraitsMap[personality];
