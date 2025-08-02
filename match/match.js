@@ -108,7 +108,7 @@ const animals = {
       traits: "Bold, relentless, ambitious.",
       message: "Tyson’s love is fierce and unstoppable — a fire that never dies.",
       personality: "Fierce & Passionate",
-      image: "/https://techy-ui.github.io/Project-Pig-2.0match/tiger.jpg"
+      image: "/https://techy-ui.github.io/Project-Pig-2.0/match/tiger.jpg"
     },
     {
       name: "Benny the Rabbit",
@@ -145,7 +145,7 @@ const animals = {
       traits: "Free-spirited, clever, selective.",
       message: "Cleo loves with curious eyes — selective, clever, and charming.",
       personality: "Independent & Curious",
-      image: "/match/cat.jpg"
+      image: "https://techy-ui.github.io/Project-Pig-2.0/match/cat.jpg"
     },
     {
       name: "Fia the Fox",
@@ -215,7 +215,7 @@ function matchAnimal() {
   if (photoURL) {
     userPhoto.src = photoURL;
   } else {
-    userPhoto.src = gender === "female" ? "https://techy-ui.github.io/Project-Pig-2.0/match/female.png" : "https://techy-ui.github.io/Project-Pig-2.0//match/man.png";
+    userPhoto.src = gender === "female" ? "https://techy-ui.github.io/Project-Pig-2.0/match/female.png" : "https://techy-ui.github.io/Project-Pig-2.0/match/man.png";
   }
 
   const human = humanTraitsMap[personality];
